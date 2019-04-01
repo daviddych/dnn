@@ -2,6 +2,7 @@
 # encoding: utf-8
 
 # 说明：　该程序是利用keras设计的一个包含N个隐藏层的神经网络。
+#        其中, N主要由hide_layer_size参数决定
 # 数据集： MNIST
 
 import numpy as np
@@ -115,7 +116,7 @@ class MNISTFullyConnectedNetwork(object):
 def run(retrain=True):
     fcn = MNISTFullyConnectedNetwork()
     if retrain:
-        fcn.load_design_train_same((512,))
+        fcn.load_design_train_same((512,)) # 传入不同的隐藏层节点数(512, 512, 256)
     else:
         fcn.load_model()
 
