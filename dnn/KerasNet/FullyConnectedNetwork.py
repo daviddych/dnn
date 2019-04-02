@@ -8,12 +8,14 @@
 import numpy as np
 import tensorflow.keras as keras
 import tensorflow.keras.datasets.mnist as mnist
+import livelossplot  # from livelossplot.keras import PlotLossesCallback  # pip install livelossplot
 
 
 class MNISTFullyConnectedNetwork(object):
     """docstring for MNIST_FullyConnectedNetwork"""
     def __init__(self):
         self.model = keras.Sequential()
+        self.plot_losses = livelossplot.keras.PlotLossesCallback()
 
     def load_design_train_same(self,  hide_layer_size=(512, 512)):
         # 加载数据
@@ -84,10 +86,16 @@ class MNISTFullyConnectedNetwork(object):
 
     # 训练和评估已定义好的模型
     def train(self, x_train, y_train, x_test, y_test, batch_size=128, nb_epoch=10):
+        self.model.compile(loss='categorical_crossentropy',
+                           optimizer=keras.optimizers.RMSprop(),
+                           metrics=['accuracy'])
 
-        self.model.compile(loss='categorical_crossentropy', optimizer=keras.optimizers.RMSprop(), metrics=['accuracy'])
-
-        self.model.fit(x_train, y_train, batch_size=batch_size, epochs=nb_epoch, verbose=1, validation_data=(x_test, y_test))
+        self.model.fit(x_train, y_train,
+                       batch_size=batch_size,
+                       epochs=nb_epoch,
+                       verbose=1,
+                       validation_data=(x_test, y_test),
+                       callbacks=[self.plot_losses])
 
         score = self.model.evaluate(x_test, y_test, verbose=0)
 
@@ -116,7 +124,7 @@ class MNISTFullyConnectedNetwork(object):
 def run(retrain=True):
     fcn = MNISTFullyConnectedNetwork()
     if retrain:
-        fcn.load_design_train_same((512,)) # 传入不同的隐藏层节点数(512, 512, 256)
+        fcn.load_design_train_same((512,))  # 传入不同的隐藏层节点数(512, 512, 256)
     else:
         fcn.load_model()
 
@@ -132,5 +140,6 @@ def run(retrain=True):
 
 
 if __name__ == '__main__':
+
     # 传入参数True表示重新训练模型,否False时,将从model/mnist-fully-connected-network.h5中加载模型
     run(True)
