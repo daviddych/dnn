@@ -1,0 +1,8 @@
+
+dnn/KerasNet/image/
+
+dnn/KerasNet/model/
+
+dnn/KerasNet/acc-loss-batch\.jpg
+
+dnn/KerasNet/acc-loss-epoch\.jpg
