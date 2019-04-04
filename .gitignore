@@ -1,7 +1,7 @@
 
-dnn/KerasNet/image/
+dnn/KerasNet/image/*.png
 
-dnn/KerasNet/model/
+dnn/KerasNet/model/*.h5
 
 dnn/KerasNet/acc-loss-batch\.jpg
 

@@ -1,15 +1,14 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-# 说明：　该程序是利用keras实现了一个包含2个卷积+2个全连接+一个softmax的神经网络。
+# 说明：　该程序是利用keras实现了一个包含4个卷积+2个全连接+一个softmax的神经网络。
 #
-# 数据集： MNIST
+# 数据集： CIFAR10
 
 import numpy as np
 import tensorflow.keras as keras
-import tensorflow.keras.datasets.mnist as mnist
+import tensorflow.keras.datasets.cifar10 as cifar10
 from   livelossplot.keras import PlotLossesCallback  # pip install livelossplot
-import time
 import os
 
 class ConvolutionalNeuralNetwork(object):
@@ -17,8 +16,8 @@ class ConvolutionalNeuralNetwork(object):
     def __init__(self):
         self.model = keras.Sequential()
         self.plot_losses = PlotLossesCallback()
-        self.save_model_img = 'image/convolutional_neural_network_model_mnist.png'
-        self.save_model_file = 'model/convolutional_neural_network_model_mnist.h5'
+        self.save_model_img = 'image/convolutional_neural_network_model_cifar10.png'
+        self.save_model_file = 'model/convolutional_neural_network_model_cifar10.h5'
 
     def load_design_train_same(self):
         # 加载数据
@@ -34,16 +33,14 @@ class ConvolutionalNeuralNetwork(object):
         self.train(x_train, y_train, x_test, y_test, 128, 5)
 
         # 保存模型
-        self.save_model(self.save_model_file)
+        self.save_model(filename=self.save_model_file)
 
     # 加载数据
     def read(self, num_classes=10):
-        (x_train, y_train), (x_test, y_test) = mnist.load_data()
+        (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 
-        # 将图片从三维矩阵reshape为四维矩阵
-        self.input_shape = (x_train.shape[1], x_train.shape[2], 1)
-        x_train = x_train.reshape(x_train.shape[0], x_train.shape[1], x_train.shape[2], 1)
-        x_test = x_test.reshape(x_test.shape[0], x_test.shape[1], x_test.shape[2], 1)
+        # 将图片是三维矩阵, 获得图像三维度数值
+        self.input_shape = x_train.shape[1:]
 
         x_train = x_train.astype('float32')
         x_test = x_test.astype('float32')
@@ -60,31 +57,37 @@ class ConvolutionalNeuralNetwork(object):
 
     # 定义基于Keras的简单卷积网络分类模型
     def design(self):
-        # if len(layer_size) <= 2:
-        #     print("Inappropriate parameter: lay_size, len(lay_size) should be larger than 2")
-        #     return False
-
         # 第一层()
-        conv1 = keras.layers.Convolution2D(32, kernel_size=(3, 3), strides=(1, 1), input_shape=self.input_shape)
+        conv1 = keras.layers.Convolution2D(32, kernel_size=(3, 3), padding='same', input_shape=self.input_shape)
         self.model.add(conv1)
         self.model.add(keras.layers.Activation('relu'))
 
         # 第二层
-        self.model.add(keras.layers.Convolution2D(32, (3, 3)))
+        self.model.add(keras.layers.Convolution2D(32, kernel_size=(3, 3)))
         self.model.add(keras.layers.Activation('relu'))
         self.model.add(keras.layers.MaxPooling2D())
         self.model.add(keras.layers.Dropout(0.25))  # Dense()的前面要减少连接点，防止过拟合，故通常要Dropout层或池化层
 
         # 第三层()
+        self.model.add(keras.layers.Convolution2D(64, kernel_size=(3, 3), padding='same'))
+        self.model.add(keras.layers.Activation('relu'))
+
+        # 第四层
+        self.model.add(keras.layers.Convolution2D(64, kernel_size=(3, 3)))
+        self.model.add(keras.layers.Activation('relu'))
+        self.model.add(keras.layers.MaxPooling2D(pool_size=(2, 2)))
+        self.model.add(keras.layers.Dropout(0.25))
+
+        # 第五层
         self.model.add(keras.layers.Flatten())      # Dense()层的输入通常是2D张量，故应使用Flatten层或全局平均池化
-        self.model.add(keras.layers.Dense(128))
+        self.model.add(keras.layers.Dense(512))
         self.model.add(keras.layers.Activation('relu'))  # Dense()层的后面通常要加非线性化函数
         self.model.add(keras.layers.Dropout(0.5))
 
-        # 第四层
+        # 第六层
         self.model.add(keras.layers.Dense(10))
 
-        # 第五层
+        # 第七层
         self.model.add(keras.layers.Activation('softmax'))  # 分类网络最后层,通常是softmax
 
         self.model_info(to_file = self.save_model_img)
@@ -120,7 +123,7 @@ class ConvolutionalNeuralNetwork(object):
     def predict(self, x, batch_size=128, verbose=0):
         result = self.model.predict(x, batch_size=batch_size, verbose=verbose)
 
-        # axis=1表示按行 取最大值   如果axis=0表示按列 取最大值 axis=None表示全部
+        # axis=1表示按行取最大值; 如果axis=0表示按列 取最大值 axis=None表示全部
         result_max = np.argmax(result, axis=1)
 
         return result_max
@@ -128,7 +131,7 @@ class ConvolutionalNeuralNetwork(object):
     # 保存训练好的模型
     def save_model(self, filename=None):
         if filename == None:
-            filename = self.save_model_file #self.str_time() + '.h5'
+            filename = self.str_time() + '.h5'
 
         self.model.save(filename)
 
@@ -144,10 +147,6 @@ class ConvolutionalNeuralNetwork(object):
         self.model = keras.models.load_model(filename)
         self.model_info()
 
-    # 获取系统时间字符串
-    @classmethod
-    def str_time(self):
-        return  time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
 
 def run(retrain=True):
     fcn = ConvolutionalNeuralNetwork()
@@ -159,7 +158,7 @@ def run(retrain=True):
     _, (x_test, y_test) = fcn.read()
 
     # 识别单个数据, 切记首先要reshape数据
-    single_num = fcn.predict(x_test[1].reshape((1, 28, 28, 1)))
+    single_num = fcn.predict(x_test[1].reshape((1, x_test.shape[1], x_test.shape[2], x_test.shape[3])))
     print("single_num:", single_num)
 
     # 识别多个数据

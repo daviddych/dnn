@@ -9,16 +9,19 @@ import numpy as np
 import tensorflow.keras as keras
 import tensorflow.keras.datasets.mnist as mnist
 from livelossplot.keras import PlotLossesCallback  # pip install livelossplot
+import os
 
-class MNISTConvolutionalNeuralNetwork(object):
+class MNISTFullyConnectedNetwork(object):
     """docstring for MNIST_FullyConnectedNetwork"""
     def __init__(self):
         self.model = keras.Sequential()
         self.plot_losses = PlotLossesCallback()
+        self.save_model_img = 'image/fully_connected_network_model.png'
+        self.save_model_file = 'model/fully_connected_network_model.h5'
 
     def load_design_train_same(self,  hide_layer_size=(512, 512)):
         # 加载数据
-        (x_train, y_train), (x_test, y_test) = MNISTConvolutionalNeuralNetwork.read()
+        (x_train, y_train), (x_test, y_test) = MNISTFullyConnectedNetwork.read()
 
         print(x_train.shape)
         print(y_train.shape)
@@ -80,8 +83,12 @@ class MNISTConvolutionalNeuralNetwork(object):
         self.model_info()
         return True
 
-    def model_info(self, to_file='image/fully_connected_network_model.png'):
+    def model_info(self, to_file=None):
         print(self.model.summary())
+
+        if to_file == None:
+            to_file = self.save_model_img
+
         keras.utils.plot_model(self.model, to_file)
 
     # 训练和评估已定义好的模型
@@ -112,17 +119,27 @@ class MNISTConvolutionalNeuralNetwork(object):
         return result_max
 
     # 保存训练好的模型
-    def save_model(self, filename='model/mnist-fully-connected-network.h5'):
+    def save_model(self, filename=None):
+        if filename == None:
+            filename = self.save_model_file
+
         self.model.save(filename)
 
     # 加载已经训练好的模型
-    def load_model(self, filename='model/mnist-fully-connected-network.h5'):
+    def load_model(self, filename=None):
+        if filename == None:
+            filename = self.save_model_file
+
+        if os.path.exists(filename) == False:
+            print("Cannot find: ", filename)
+            exit()
+
         self.model = keras.models.load_model(filename)
         self.model_info()
 
 
 def run(retrain=True):
-    fcn = MNISTConvolutionalNeuralNetwork()
+    fcn = MNISTFullyConnectedNetwork()
     if retrain:
         fcn.load_design_train_same((512,))  # 传入不同的隐藏层节点数(512, 512, 256)
     else:
@@ -140,5 +157,5 @@ def run(retrain=True):
 
 
 if __name__ == '__main__':  
-    # 传入参数True表示重新训练模型,否False时,将从model/mnist-fully-connected-network.h5中加载模型
+    # 传入参数True表示重新训练模型,否False时,将从self.save_model_file中加载模型
     run(True)

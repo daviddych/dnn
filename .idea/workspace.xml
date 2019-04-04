@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cba3524-14fd-4aad-b7d6-f898e0fcb49a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/dnn/KerasNet/ConvolutionNeuralNetwork_CIFAR10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dnn/KerasNet/image/LSTM_model_mnist.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dnn/KerasNet/model/LSTM_model_mnist.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dnn/KerasNet/ConvolutionNeuralNetwork_CIFAR10.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_MNIST.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_MNIST.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dnn/KerasNet/FullyConnectedNetwork_MNIST.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnn/KerasNet/FullyConnectedNetwork_MNIST.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dnn/KerasNet/drawacc.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnn/KerasNet/drawacc.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dnn/KerasNet/drawacc.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
+            <state relative-caret-position="323">
+              <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -34,47 +39,10 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="95">
-                <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <first_editor relative-caret-position="133">
+                <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionNeuralNetwork_CIFAR10.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="156" column="47" lean-forward="true" selection-start-line="156" selection-start-column="47" selection-end-line="156" selection-end-column="47" />
-              <folding>
-                <element signature="e#108#126#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/engine/sequential.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-435">
-              <caret line="239" column="15" selection-start-line="239" selection-start-column="15" selection-end-line="239" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_MNIST.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-188">
-              <caret line="128" column="33" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="33" />
-              <folding>
-                <element signature="e#108#126#0" expanded="true" />
-                <element signature="e#731#1135#0" />
-                <element signature="e#1835#2829#0" />
-                <element signature="e#3215#3788#0" />
-                <element signature="e#3894#4099#0" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -82,26 +50,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="407">
+              <caret line="156" column="14" lean-forward="true" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
+              <folding>
+                <element signature="e#106#124#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/layers/pooling.py">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="297" column="2" selection-start-line="297" selection-start-column="2" selection-end-line="297" selection-end-column="2" />
+            <state relative-caret-position="-705">
+              <caret line="331" column="31" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/FullyConnectedNetwork_MNIST.py">
+        <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/layers/recurrent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="142" column="39" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
+            <state relative-caret-position="1376">
+              <caret line="2036" column="6" selection-start-line="2036" selection-start-column="6" selection-end-line="2036" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -111,6 +82,51 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
               <caret line="440" column="30" selection-start-line="440" selection-start-column="15" selection-end-line="440" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_MNIST.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="139" selection-start-line="139" selection-end-line="141" selection-end-column="18" />
+              <folding>
+                <element signature="e#108#126#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/FullyConnectedNetwork_MNIST.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+              <folding>
+                <element signature="e#128#146#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_CIFAR10.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+              <folding>
+                <element signature="e#110#128#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,6 +145,7 @@
       <find>info</find>
       <find>Info</find>
       <find>figure()</find>
+      <find>load_design_train_same</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,20 +163,22 @@
         <option value="$PROJECT_DIR$/dnn/KerasNet/drawacc.py" />
         <option value="$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeural Networks_MNIST.py" />
         <option value="$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetworks_MNIST.py" />
-        <option value="$PROJECT_DIR$/dnn/KerasNet/FullyConnectedNetwork_MNIST.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/dnn/KerasNet/model/LSTM_MNIST.py" />
-        <option value="$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_MNIST.py" />
-        <option value="$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py" />
         <option value="$PROJECT_DIR$/dnn/KerasNet/ConvolutionNeuralNetwork_CIFAR10.py" />
+        <option value="$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_CIFAR10.py" />
+        <option value="$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_MNIST.py" />
+        <option value="$PROJECT_DIR$/dnn/KerasNet/FullyConnectedNetwork_MNIST.py" />
+        <option value="$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="23" />
-    <option name="y" value="94" />
+    <option name="x" value="51" />
+    <option name="y" value="324" />
     <option name="width" value="1866" />
-    <option name="height" value="806" />
+    <option name="height" value="660" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -218,26 +237,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ConvolutionNeuralNetwork_CIFAR10">
-    <configuration name="ConvolutionNeuralNetwork_CIFAR10" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="dych_tf_study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dnn/KerasNet" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dnn/KerasNet/ConvolutionNeuralNetwork_CIFAR10.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.ConvolutionalNeuralNetwork_MNIST">
     <configuration name="ConvolutionalNeuralNetwork_MNIST" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dych_tf_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -257,28 +257,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="FullyConnectedNetwork" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="dych_tf_study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dnn" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dnn/KerasNet/FullyConnectedNetwork.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="FullyConnectedNetwork_MNIST" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dych_tf_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -290,6 +268,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dnn/KerasNet/FullyConnectedNetwork_MNIST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LSTM_MNIST" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dych_tf_study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dnn/KerasNet" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -320,42 +317,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="drawacc" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="dych_tf_study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dnn/KerasNet" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dnn/KerasNet/drawacc.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.FullyConnectedNetwork" />
-      <item itemvalue="Python.drawacc" />
-      <item itemvalue="Python.ConvolutionalNeuralNetwork_MNIST" />
-      <item itemvalue="Python.FullyConnectedNetwork_MNIST" />
-      <item itemvalue="Python.ConvolutionNeuralNetwork_CIFAR10" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ConvolutionNeuralNetwork_CIFAR10" />
         <item itemvalue="Python.ConvolutionalNeuralNetwork_MNIST" />
         <item itemvalue="Python.FullyConnectedNetwork_MNIST" />
-        <item itemvalue="Python.drawacc" />
-        <item itemvalue="Python.FullyConnectedNetwork" />
+        <item itemvalue="Python.LSTM_MNIST" />
       </list>
     </recent_temporary>
   </component>
@@ -371,7 +337,7 @@
       <updated>1551160465342</updated>
       <workItem from="1554176713740" duration="634000" />
       <workItem from="1554177543628" duration="3325000" />
-      <workItem from="1554186385644" duration="28461000" />
+      <workItem from="1554186385644" duration="37886000" />
     </task>
     <task id="LOCAL-00001" summary="增加基于Keras的简单全连接网络">
       <created>1554130365545</created>
@@ -384,7 +350,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32420000" />
+    <option name="totallyTimeSpent" value="41845000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,7 +365,7 @@
     <frame x="51" y="-4" width="1869" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49635923" visible="true" weight="0.1878089" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49635923" visible="true" weight="0.1878089" />
       <window_info id="Structure" order="1" sideWeight="0.50190115" side_tool="true" weight="0.1871948" />
       <window_info id="Favorites" order="2" sideWeight="0.5036408" side_tool="true" weight="0.18956044" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -409,7 +375,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937685" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="7" visible="true" weight="0.3244898" />
+      <window_info anchor="bottom" id="Python Console" order="7" visible="true" weight="0.38163266" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.33679524" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.23590505" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -419,8 +385,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="417" height="884" id="Documentation" order="4" sideWeight="0.50453174" side_tool="true" visible="true" weight="0.1598023" />
-      <window_info anchor="right" id="SciView" order="5" sideWeight="0.4954683" visible="true" weight="0.1598023" />
+      <window_info anchor="right" x="0" y="0" width="417" height="884" id="Documentation" order="4" sideWeight="0.5049505" side_tool="true" visible="true" weight="0.1598023" />
+      <window_info anchor="right" id="SciView" order="5" sideWeight="0.4950495" visible="true" weight="0.1598023" />
       <window_info anchor="right" id="Database" order="6" />
     </layout>
   </component>
@@ -501,39 +467,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_MNIST.py</url>
-          <line>29</line>
+          <line>30</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_MNIST.py</url>
-          <line>23</line>
+          <line>24</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_MNIST.py</url>
-          <line>66</line>
+          <line>67</line>
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionNeuralNetwork_CIFAR10.py</url>
-          <line>166</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionNeuralNetwork_CIFAR10.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionNeuralNetwork_CIFAR10.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/dych_tf_study$ConvolutionalNeuralNetwork_MNIST.coverage" NAME="ConvolutionalNeuralNetwork_MNIST Coverage Results" MODIFIED="1554270827135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$LSTM_MNIST.coverage" NAME="LSTM_MNIST Coverage Results" MODIFIED="1554356028482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
     <SUITE FILE_PATH="coverage/dych_tf_study$ConvolutionNeuralNetwork_CIFAR10.coverage" NAME="ConvolutionNeuralNetwork_CIFAR10 Coverage Results" MODIFIED="1554303753978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
     <SUITE FILE_PATH="coverage/dych_tf_study$FullyConnectedNetwork.coverage" NAME="FullyConnectedNetwork Coverage Results" MODIFIED="1554185357050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn" />
     <SUITE FILE_PATH="coverage/dych_tf_study$drawacc.coverage" NAME="drawacc Coverage Results" MODIFIED="1554195701541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
@@ -729,16 +681,6 @@
     <entry file="file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeural Networks_MNIST.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/drawacc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="92" column="29" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetworks_MNIST.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -746,53 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_umd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="196" selection-start-line="196" selection-end-line="196" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/1867991859/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3274">
           <caret line="5243" column="8" selection-start-line="5243" selection-start-column="8" selection-end-line="5243" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/FullyConnectedNetwork_MNIST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="142" column="39" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/layers/pooling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="297" column="2" selection-start-line="297" selection-start-column="2" selection-end-line="297" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="95">
-            <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/layers/convolutional.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="440" column="30" selection-start-line="440" selection-start-column="15" selection-end-line="440" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -828,41 +727,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py">
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionNeuralNetwork_CIFAR10.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="197">
+          <caret line="41" column="29" lean-forward="true" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="e#108#126#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/engine/sequential.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="239" column="15" selection-start-line="239" selection-start-column="15" selection-end-line="239" selection-end-column="15" />
+        <state relative-caret-position="173">
+          <caret line="271" lean-forward="true" selection-start-line="271" selection-end-line="271" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/layers/pooling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="297" column="2" selection-start-line="297" selection-start-column="2" selection-end-line="297" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/layers/convolutional.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="440" column="30" selection-start-line="440" selection-start-column="15" selection-end-line="440" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/drawacc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/tensorflow/python/keras/layers/recurrent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1376">
+          <caret line="2036" column="6" selection-start-line="2036" selection-start-column="6" selection-end-line="2036" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-705">
+          <caret line="331" column="31" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_umd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_CIFAR10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+          <folding>
+            <element signature="e#110#128#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_MNIST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-188">
-          <caret line="128" column="33" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="33" />
+        <state relative-caret-position="312">
+          <caret line="139" selection-start-line="139" selection-end-line="141" selection-end-column="18" />
           <folding>
             <element signature="e#108#126#0" expanded="true" />
-            <element signature="e#731#1135#0" />
-            <element signature="e#1835#2829#0" />
-            <element signature="e#3215#3788#0" />
-            <element signature="e#3894#4099#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/ConvolutionNeuralNetwork_CIFAR10.py">
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/FullyConnectedNetwork_MNIST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="156" column="47" lean-forward="true" selection-start-line="156" selection-start-column="47" selection-end-line="156" selection-end-column="47" />
+        <state relative-caret-position="440">
+          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
           <folding>
-            <element signature="e#108#126#0" expanded="true" />
+            <element signature="e#128#146#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="156" column="14" lean-forward="true" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
+          <folding>
+            <element signature="e#106#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="133">
+            <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
         </state>
       </provider>
     </entry>
