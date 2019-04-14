@@ -6,3 +6,5 @@ dnn/KerasNet/model/*.h5
 dnn/KerasNet/acc-loss-batch\.jpg
 
 dnn/KerasNet/acc-loss-epoch\.jpg
+
+*.gz
