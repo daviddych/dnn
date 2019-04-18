@@ -56,7 +56,7 @@ class MySql_StockDB(object):
         if table_dataframe not in self.table_names:
             sql = 'create table ' + table_dataframe + '''
             (  
-               id int NOT NULL,
+               datetime CHAR(20) NOT NULL,
                stock_id int NOT NULL,
                High CHAR(20) NOT NULL,
                Low CHAR(20) NOT NULL,
@@ -137,7 +137,7 @@ class MySql_StockDB(object):
         self.clear_table(['stock_dataframe', 'stock_name'])
 
         sql_name = "INSERT INTO stock_name (id, name, code) VALUES (%s, %s, %s)"
-        sql_dataframe = "INSERT INTO stock_dataframe (id, stock_id, High, Low, Open, Close) VALUES (%s, %s, %s, %s, %s, %s)"
+        sql_dataframe = "INSERT INTO stock_dataframe (datetime, stock_id, High, Low, Open, Close) VALUES (%s, %s, %s, %s, %s, %s)"
         for i, (name_, (code_, stock)) in enumerate(stocks.items()):
             try:
                 self.cursor.execute(sql_name, (str(i), name_, code_))  # 列表格式数据
@@ -157,6 +157,7 @@ class MySql_StockDB(object):
             print("stock_id = ", stock_id[0])
             self.conn.commit()
 
+            date_ = stock.index
             highs = stock['High'].get_values()
             lows = stock['Low'].get_values()
             opens = stock['Open'].get_values()
@@ -164,7 +165,7 @@ class MySql_StockDB(object):
             for j in range(0, highs.shape[0]):
                 # 列表格式数据
                 try:
-                    self.cursor.execute(sql_dataframe, (str(j), str(stock_id[0]), str(highs[j]), str(lows[j]), str(opens[j]), str(closes[j])))
+                    self.cursor.execute(sql_dataframe, (str(date_[j]), str(stock_id[0]), str(highs[j]), str(lows[j]), str(opens[j]), str(closes[j])))
                     self.conn.commit()
                 except:
                     print("重复无需重复插入3333............")

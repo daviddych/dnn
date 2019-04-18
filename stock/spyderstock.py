@@ -24,7 +24,7 @@ class SpyderStock(object):
                 # 计算变换并添加进去
                 self.stocks[name] = (code, stock)#self.addColumn_change(stock)
 
-    def download_stock(self, code, start_date=datetime.datetime(2010, 1, 1), end_date=datetime.date.today()):
+    def download_stock(self, code, start_date=datetime.datetime(2019, 4, 1), end_date=datetime.date.today()):
         ''' 从雅虎财经上下载特定时间段内的特定代码的股票数据 '''
         stock = web.DataReader(code, 'yahoo', start_date, end_date)
         if len(stock) == 0:
@@ -54,7 +54,12 @@ class SpyderStock(object):
                 self.drawer.open_close_bar(stock)
                 print("name = ", name)
 
-
+def datatime2str(stock):
+    date_ = stock.index
+    for i in range(0, date_.shape[0]):
+        dt=date_[i].strftime("...%Y-%m-%d %H:%M:%S")
+        print(date_[i], dt)
+        
 def run():
     #stockInfo = {'泸州老窖': '000568.SZ', '南京熊猫': '600775.SS', '口子窖': '603589.SS', '中兴通信': '000063.SZ',
     #             "*ST凯迪": '000939.SZ', '大恒科技': '600288.SS'}
@@ -62,7 +67,7 @@ def run():
     dd = SpyderStock(stockInfo)
     dd.print()
 
-    return
+    # return
 
     db = mysql_stockdb.MySql_StockDB(database='stock', user='root', passwd='dyc')
     db.insert_stocks(dd.stocks)
