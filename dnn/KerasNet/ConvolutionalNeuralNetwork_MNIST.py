@@ -92,6 +92,7 @@ class ConvolutionalNeuralNetwork(object):
         return True
 
     def model_info(self, to_file=None):
+        ''' 打印网络结构 + 保存为图像文件 '''
         print(self.model.summary())
         if to_file == None:
             to_file = self.save_model_img

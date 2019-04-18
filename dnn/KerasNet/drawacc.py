@@ -100,16 +100,16 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy'])
 
 
-plot_losses = PlotLossesCallback()
+#plot_losses = PlotLossesCallback()
 
 
 # 创建一个实例LossHistory
-#history = History()
+history = History()
 model.fit(X_train, Y_train,
           batch_size=batch_size, nb_epoch=nb_epoch,
           verbose=0,
           validation_data=(X_test, Y_test),
-          callbacks=[plot_losses])   # 回调函数将数据传给history, 此处必须是数组
+          callbacks=[history])   # 回调函数将数据传给history, 此处必须是数组
 
 # 模型评估
 score = model.evaluate(X_test, Y_test, verbose=0)

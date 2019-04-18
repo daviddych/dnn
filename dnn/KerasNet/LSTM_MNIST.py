@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
+# pip install pydot
+# pip install livelossplot
 # 说明：　该程序是利用keras实现了一个LSTM+1个全连接+一个softmax的神经网络。
 #
 # 数据集： MNIST
@@ -154,4 +156,4 @@ def run(retrain=True):
 
 if __name__ == '__main__':
     # 传入参数True表示重新训练模型,否False时,将从model/mnist-fully-connected-network.h5中加载模型
-    run(False)
+    run(True)
