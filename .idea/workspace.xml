@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cba3524-14fd-4aad-b7d6-f898e0fcb49a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dnn/KerasNet/LSTM_pullution.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dnn/KerasNet/ResNet_CIFAR10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dnn/KerasNet/multi_slstm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dnn/KerasNet/one_slstm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/lstm_stock.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dych_tf_study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dych_tf_study.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_CIFAR10.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_CIFAR10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_MNIST.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnn/KerasNet/ConvolutionalNeuralNetwork_MNIST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock/liveplot.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock/liveplot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock/mysql_stockdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock/mysql_stockdb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock/spyderstock.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock/spyderstock.py" afterDir="false" />
-    </list>
+    <list default="true" id="2cba3524-14fd-4aad-b7d6-f898e0fcb49a" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,15 +13,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_pullution_multi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4256">
-              <caret line="243" column="59" selection-start-line="243" selection-start-column="59" selection-end-line="243" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stock/spyderstock.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -78,11 +51,60 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stock/lstm_stock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="279" column="44" lean-forward="true" selection-start-line="279" selection-start-column="44" selection-end-line="279" selection-end-column="44" />
+            <state relative-caret-position="362">
+              <caret line="281" column="28" lean-forward="true" selection-start-line="281" selection-start-column="28" selection-end-line="281" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/drawacc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="123" selection-start-line="123" selection-end-line="123" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
+              <folding>
+                <element signature="e#1807#2173#0" />
+                <element signature="e#2502#3111#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_pullution.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+              <folding>
+                <element signature="e#106#127#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/multi_slstm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1938">
+              <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -217,6 +239,17 @@
             <path>
               <item name="dych_tf_study" type="b2602c69:ProjectViewProjectNode" />
               <item name="dych_tf_study" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dych_tf_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dych_tf_study" type="462c0819:PsiDirectoryNode" />
+              <item name="dnn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dych_tf_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dych_tf_study" type="462c0819:PsiDirectoryNode" />
+              <item name="dnn" type="462c0819:PsiDirectoryNode" />
+              <item name="KerasNet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dych_tf_study" type="b2602c69:ProjectViewProjectNode" />
@@ -426,6 +459,7 @@
       <workItem from="1556237511296" duration="7558000" />
       <workItem from="1556257221354" duration="2148000" />
       <workItem from="1556261642487" duration="452000" />
+      <workItem from="1556263651912" duration="426000" />
     </task>
     <task id="LOCAL-00001" summary="增加基于Keras的简单全连接网络">
       <created>1554130365545</created>
@@ -445,7 +479,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344297000" />
+    <option name="totallyTimeSpent" value="344723000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,7 +493,7 @@
   <component name="ToolWindowManager">
     <frame x="50" y="-4" width="1871" height="1085" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49635923" visible="true" weight="0.18945634" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49635923" visible="true" weight="0.2756727" />
       <window_info id="Structure" order="1" sideWeight="0.50190115" side_tool="true" weight="0.1871948" />
       <window_info id="Favorites" order="2" sideWeight="0.5036408" side_tool="true" weight="0.18956044" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -469,7 +503,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32857144" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="7" visible="true" weight="0.2764398" />
+      <window_info anchor="bottom" id="Python Console" order="7" visible="true" weight="0.26910993" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.22827224" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -874,17 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="e#1807#2173#0" />
-            <element signature="e#2502#3111#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras/engine/network.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -988,16 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/drawacc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="123" selection-start-line="123" selection-end-line="123" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1014,16 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/multi_slstm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras/engine/sequential.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -1035,16 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
           <caret line="714" column="31" selection-start-line="714" selection-start-column="31" selection-end-line="714" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_pullution.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
-          <folding>
-            <element signature="e#106#127#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1144,8 +1137,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stock/lstm_stock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="279" column="44" lean-forward="true" selection-start-line="279" selection-start-column="44" selection-end-line="279" selection-end-column="44" />
+        <state relative-caret-position="362">
+          <caret line="281" column="28" lean-forward="true" selection-start-line="281" selection-start-column="28" selection-end-line="281" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/drawacc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#1807#2173#0" />
+            <element signature="e#2502#3111#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_pullution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+          <folding>
+            <element signature="e#106#127#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/multi_slstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
