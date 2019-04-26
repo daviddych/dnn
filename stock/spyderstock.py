@@ -5,19 +5,18 @@
 import datetime
 import pandas_datareader.data as web
 from liveplot import LivePlot
-# import liveplot
-import mysql_stockdb
+from mysql_stockdb import MySql_StockDB
 
 
 class SpyderStock(object):
-    def __init__(self, name_codes):
+    def __init__(self, name_codes, start_date=datetime.datetime(2019, 4, 1), end_date=datetime.date.today()):
         ''' 从雅虎财经网站下载指定的股票(名字+股票代码)数据 '''
         self.stocks = {}
         self.drawer = LivePlot()
 
         # 遍历下载股票数据
         for name, code in name_codes.items():
-            stock = self.download_stock(code)
+            stock = self.download_stock(code, start_date=start_date, end_date=end_date)
             if len(stock) == 0:
                 print("Failed to spyder ", name, " data!")
             else:
@@ -52,7 +51,8 @@ class SpyderStock(object):
 
             for name, (code, stock) in self.stocks.items():
                 self.drawer.open_close_bar(stock)
-                print("name = ", name)
+                print("draw: ", name)
+                print(stock)
 
 def datatime2str(stock):
     date_ = stock.index
@@ -68,11 +68,9 @@ def run():
     dd.print()
 
     # return
-
-    db = mysql_stockdb.MySql_StockDB(database='stock', user='root', passwd='dyc')
+    db = MySql_StockDB(database='stock', user='root', passwd='dyc')
     db.insert_stocks(dd.stocks)
     db.fetch('stock_name')
-    db.fetch('stock_dataframe')
 
 if __name__ == '__main__':
     run()

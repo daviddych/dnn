@@ -40,11 +40,17 @@ class ConvolutionalNeuralNetwork(object):
     def read(self, num_classes=10):
         (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-        # 将图片从三维矩阵reshape为四维矩阵
-        self.input_shape = (x_train.shape[1], x_train.shape[2], 1)
-        x_train = x_train.reshape(x_train.shape[0], x_train.shape[1], x_train.shape[2], 1)
-        x_test = x_test.reshape(x_test.shape[0], x_test.shape[1], x_test.shape[2], 1)
+        # 将图片从三维矩阵reshape为四维矩阵, keras输入数据有两种格式,一种是通道数放在前面,一种是通道数放在后面
+        if keras.backend.image_data_format == 'channels_first':
+            self.input_shape = (1, x_train.shape[1], x_train.shape[2])
+            x_train = x_train.reshape(x_train.shape[0], 1, x_train.shape[1], x_train.shape[2])
+            x_test = x_test.reshape(x_test.shape[0], 1, x_test.shape[1], x_test.shape[2])
+        else:
+            self.input_shape = (x_train.shape[1], x_train.shape[2], 1)
+            x_train = x_train.reshape(x_train.shape[0], x_train.shape[1], x_train.shape[2], 1)
+            x_test = x_test.reshape(x_test.shape[0], x_test.shape[1], x_test.shape[2], 1)
 
+        # 转成float32使后面的计算更精确
         x_train = x_train.astype('float32')
         x_test = x_test.astype('float32')
 
@@ -65,27 +71,28 @@ class ConvolutionalNeuralNetwork(object):
         #     return False
 
         # 第一层()
-        conv1 = keras.layers.Convolution2D(32, kernel_size=(3, 3), strides=(1, 1), input_shape=self.input_shape)
+        conv1 = keras.layers.Convolution2D(32, kernel_size=(3, 3), strides=(1, 1), padding='same', input_shape=self.input_shape)
         self.model.add(conv1)
         self.model.add(keras.layers.Activation('relu'))
 
         # 第二层
-        self.model.add(keras.layers.Convolution2D(32, (3, 3)))
+        self.model.add(keras.layers.Convolution2D(64, (3, 3), padding='same'))
         self.model.add(keras.layers.Activation('relu'))
         self.model.add(keras.layers.MaxPooling2D())
         self.model.add(keras.layers.Dropout(0.25))  # Dense()的前面要减少连接点，防止过拟合，故通常要Dropout层或池化层
 
-        # 第三层()
+        # 第三层(), 首先展平所有像素,eg.[14*14*64] --> [12544]
         self.model.add(keras.layers.Flatten())      # Dense()层的输入通常是2D张量，故应使用Flatten层或全局平均池化
-        self.model.add(keras.layers.Dense(128))
+        self.model.add(keras.layers.Dense(128))     # 对所有像素使用全连接,输出为128维
         self.model.add(keras.layers.Activation('relu'))  # Dense()层的后面通常要加非线性化函数
-        self.model.add(keras.layers.Dropout(0.5))
+        self.model.add(keras.layers.Dropout(0.5))        # 对输入采用0.5概率的Dropout
 
         # 第四层
-        self.model.add(keras.layers.Dense(10))
+        self.model.add(keras.layers.Dense(10, activation='softmax')) # 分类网络最后层,通常是softmax
 
-        # 第五层
-        self.model.add(keras.layers.Activation('softmax'))  # 分类网络最后层,通常是softmax
+        self.model.compile(loss='categorical_crossentropy',
+                           optimizer='adadelta',
+                           metrics=['accuracy'])
 
         self.model_info(to_file = self.save_model_img)
 
@@ -101,9 +108,7 @@ class ConvolutionalNeuralNetwork(object):
 
     # 训练和评估已定义好的模型
     def train(self, x_train, y_train, x_test, y_test, batch_size=128, nb_epoch=10):
-        self.model.compile(loss='categorical_crossentropy',
-                           optimizer='adadelta',
-                           metrics=['accuracy'])
+        # 将compile上移
 
         self.model.fit(x_train, y_train,
                        batch_size=batch_size,

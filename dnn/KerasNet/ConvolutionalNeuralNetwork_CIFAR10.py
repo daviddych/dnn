@@ -49,7 +49,7 @@ class ConvolutionalNeuralNetwork(object):
         x_train /= 255
         x_test /= 255
 
-        # 将类别向量(从0到nb_classes的整数向量)映射为二值类别矩阵
+        # 将类别向量(从0到nb_classes的整数向量)映射为二进制,方便训练
         y_train = keras.utils.to_categorical(y_train, num_classes)
         y_test = keras.utils.to_categorical(y_test, num_classes)
 

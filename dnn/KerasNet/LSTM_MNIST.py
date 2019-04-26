@@ -25,7 +25,7 @@ class LongShortTermMemory(object):
         # LSTM的输出维度
         self.nb_lstm_outputs = 30
 
-    def load_design_train_same(self):
+    def load_design_train_save(self):
         # 加载数据
         (x_train, y_train), (x_test, y_test) = self.read()
 
@@ -139,7 +139,7 @@ class LongShortTermMemory(object):
 def run(retrain=True):
     fcn = LongShortTermMemory()
     if retrain:
-        fcn.load_design_train_same()  # 传入不同的隐藏层节点数(512, 512, 256)
+        fcn.load_design_train_save()  # 传入不同的隐藏层节点数(512, 512, 256)
     else:
         fcn.load_model()
 

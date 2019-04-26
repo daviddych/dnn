@@ -3,7 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-''' 绘制股票数据图 '''
+''' 绘制股票数据柱状图 '''
 class LivePlot(object):
     def __init__(self):
         pass
