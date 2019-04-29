@@ -12,3 +12,15 @@ dnn/KerasNet/acc-loss-epoch\.jpg
 *.dyc
 
 *.pyc
+
+dnn/KerasNet/saved_models/cifar10_ResNet20v1_model\.001\.h5
+
+dnn/KerasNet/saved_models/cifar10_ResNet20v1_model\.002\.h5
+
+dnn/KerasNet/saved_models/cifar10_ResNet20v1_model\.005\.h5
+
+dnn/KerasNet/saved_models/cifar10_ResNet20v1_model\.007\.h5
+
+dnn/KerasNet/saved_models/cifar10_ResNet20v1_model\.029\.h5
+
+stock/image/stockSeries_lstm\.png
