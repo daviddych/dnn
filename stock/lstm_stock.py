@@ -108,17 +108,17 @@ class StockLSTM(object):
         test = values[n_train_hours:, :]
         # split into input and outputs
         n_obs = self.n_hours * self.n_features
-        train_X, train_y = train[:, :n_obs], train[:, -self.n_features]
-        test_X, test_y = test[:, :n_obs], test[:, -self.n_features]
+        train_x, train_y = train[:, :n_obs], train[:, -self.n_features]
+        test_x, test_y = test[:, :n_obs], test[:, -self.n_features]
         # reshape input to be 3D [samples, timesteps, features]
-        train_X = train_X.reshape((train_X.shape[0], self.n_hours, self.n_features))
-        test_X = test_X.reshape((test_X.shape[0], self.n_hours, self.n_features))
-        print(train_X.shape, train_y.shape, test_X.shape, test_y.shape)
+        train_x = train_x.reshape((train_x.shape[0], self.n_hours, self.n_features))
+        test_x = test_x.reshape((test_x.shape[0], self.n_hours, self.n_features))
+        print(train_x.shape, train_y.shape, test_x.shape, test_y.shape)
 
-        return train_X, train_y, test_X, test_y
+        return train_x, train_y, test_x, test_y
 
     def preprocess_data(self, train_vs_test=0.8):
-        ''' 股票数据预处理, 使其适合深度学习 '''
+        """ 股票数据预处理, 使其适合深度学习 """
         reframed = self.normal_toSupervised()
 
         # split into train and test sets
@@ -276,8 +276,8 @@ def run():
     # 2. 进行LSTM模型训练
     lstm = StockLSTM(stock)
     # 股票数据预处理(归一化缩放,时序转监督), 使其适合深度学习
-    train_X, train_y, test_X, test_y = lstm.preprocess_data(0.9)
-    print("train_X.shape = ", train_X.shape)
+    train_x, train_y, test_x, test_y = lstm.preprocess_data(0.9)
+    print("train_X.shape = ", train_x.shape)
     # lstm.design()
     # lstm.train(10000, 128)
     # lstm.Evaluate_Model()
@@ -286,16 +286,16 @@ def run():
     print('load model sucess')
 
     # 3. 进行模型回归预测
-    result = lstm.predict(test_X[-4:-1, :])
+    result = lstm.predict(test_x[-4:-1, :])
     print(result.shape)
-    print('test_X:', test_X[-4:-1, :])
-    print('test_X.shape:', test_X.shape)
+    print('test_X:', test_x[-4:-1, :])
+    print('test_X.shape:', test_x.shape)
     #result = result.reshape((result.shape[0],))
-    print("result: {} ---> {}".format(result, lstm.inv_reframed_y(result, test_X[-4:-1, :])))
+    print("result: {} ---> {}".format(result, lstm.inv_reframed_y(result, test_x[-4:-1, :])))
     
     y_true = test_y[-3:]
-    y_true = y_true.reshape((3,1))
-    print("x[-1,:]:{} ---> {}".format(test_y[-3:], lstm.inv_reframed_y(y_true, test_X[-3:])))
+    y_true = y_true.reshape((3, 1))
+    print("x[-1,:]:{} ---> {}".format(test_y[-3:], lstm.inv_reframed_y(y_true, test_x[-3:])))
     lstm.Evaluate_Model()
     del db
 

@@ -238,10 +238,12 @@ def run():
     tables = db.fetch_table_names()
     print(tables)
 
-    db.fetch('stock_name')
-    res = db.fetch('泸州老窖')
-
-    del db
+    # download and insert into mysql.
+    # get data from mysql.
+    # db.fetch('stock_name')
+    # res = db.fetch('泸州老窖')
+    #
+    # del db
 
 if __name__ == '__main__':
     run()

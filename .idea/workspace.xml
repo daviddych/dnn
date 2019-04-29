@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cba3524-14fd-4aad-b7d6-f898e0fcb49a" name="Default" comment="">
+    <list default="true" id="2cba3524-14fd-4aad-b7d6-f898e0fcb49a" name="Default" comment="comment db.fectch(&quot;&quot;) in my_sql_stockdb.py; change train_X, test_X -&gt; train_x, text_x">
+      <change beforePath="$PROJECT_DIR$/.idea/dych_tf_study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dych_tf_study.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dnn/KerasNet/ResNet_CIFAR10.py" beforeDir="false" afterPath="$PROJECT_DIR$/dnn/KerasNet/ResNet_CIFAR10.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stock/image/stockSeries_lstm.png" beforeDir="false" afterPath="$PROJECT_DIR$/stock/image/stockSeries_lstm.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock/lstm_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock/lstm_stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock/mysql_stockdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/stock/mysql_stockdb.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stock/lstm_stock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-              <folding>
-                <element signature="e#98#119#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="3360">
+              <caret line="243" column="59" selection-start-line="243" selection-start-column="59" selection-end-line="243" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -58,19 +58,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras/engine/input_layer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-233">
-              <caret line="113" column="4" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/drawacc.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2204">
-              <caret line="123" selection-start-line="123" selection-end-line="123" />
+            <state relative-caret-position="405">
+              <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#59#74#0" expanded="true" />
+                <element signature="e#215#1870#0" />
               </folding>
             </state>
           </provider>
@@ -79,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="3600">
+              <caret line="243" column="4" selection-start-line="243" selection-start-column="4" selection-end-line="243" selection-end-column="4" />
               <folding>
                 <element signature="e#1807#2173#0" />
                 <element signature="e#2502#3111#0" />
@@ -90,13 +82,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_pullution.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1748">
-              <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
-              <folding>
-                <element signature="e#106#127#0" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/stock/ReadMe.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="75">
+                <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -104,11 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dnn/KerasNet/multi_slstm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1729">
-              <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="328">
+              <caret line="296" column="35" lean-forward="true" selection-start-line="296" selection-start-column="35" selection-end-line="296" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -117,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="133">
+              <first_editor relative-caret-position="105">
                 <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
               </first_editor>
               <second_editor />
@@ -128,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stock/storage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="69" />
+            <state relative-caret-position="165">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -214,10 +203,10 @@
         <option value="$PROJECT_DIR$/dnn/KerasNet/LSTM_pullution.py" />
         <option value="$PROJECT_DIR$/stock/spyderstock.py" />
         <option value="$PROJECT_DIR$/stock/liveplot.py" />
-        <option value="$PROJECT_DIR$/stock/mysql_stockdb.py" />
         <option value="$PROJECT_DIR$/dnn/KerasNet/LSTM_pullution_multi.py" />
         <option value="$PROJECT_DIR$/stock/storage.py" />
         <option value="$PROJECT_DIR$/stock/ReadMe.md" />
+        <option value="$PROJECT_DIR$/stock/mysql_stockdb.py" />
         <option value="$PROJECT_DIR$/stock/lstm_stock.py" />
         <option value="$PROJECT_DIR$/dnn/KerasNet/ResNet_CIFAR10.py" />
       </list>
@@ -242,13 +231,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="dych_tf_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dych_tf_study" type="462c0819:PsiDirectoryNode" />
+              <item name="dnn_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dnn_study" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dych_tf_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dych_tf_study" type="462c0819:PsiDirectoryNode" />
-              <item name="dnn" type="462c0819:PsiDirectoryNode" />
+              <item name="dnn_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dnn_study" type="462c0819:PsiDirectoryNode" />
+              <item name="stock" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dych_tf_study" type="b2602c69:ProjectViewProjectNode" />
@@ -265,9 +254,9 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pedestrian-attribute-recognition-pytorch-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -288,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ResNet_CIFAR10">
+  <component name="RunManager" selected="Python.lstm_stock">
     <configuration name="LSTM_pullution_multi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dych_tf_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -311,32 +300,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ResNet_CIFAR10" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="dych_tf_study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dnn/KerasNet" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dnn/KerasNet/ResNet_CIFAR10.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="dych_tf_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -375,9 +342,6 @@
       <module name="dych_tf_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stock" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -393,7 +357,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="storage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="spyderstock" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dych_tf_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -402,7 +366,29 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stock" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stock/spyderstock.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="storage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dych_tf_study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/tensorflow/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stock" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -417,10 +403,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ResNet_CIFAR10" />
         <item itemvalue="Python.lstm_stock" />
         <item itemvalue="Python.mysql_stockdb" />
         <item itemvalue="Python.storage" />
+        <item itemvalue="Python.spyderstock" />
+        <item itemvalue="Python.mysql_stockdb" />
         <item itemvalue="Python.LSTM_pullution_multi" />
       </list>
     </recent_temporary>
@@ -453,15 +440,9 @@
       <workItem from="1556237511296" duration="7558000" />
       <workItem from="1556257221354" duration="2148000" />
       <workItem from="1556261642487" duration="452000" />
-      <workItem from="1556263651912" duration="426000" />
-      <workItem from="1556436405023" duration="2042000" />
-      <workItem from="1556460612440" duration="665000" />
-      <workItem from="1556461296316" duration="908000" />
-      <workItem from="1556462405123" duration="946000" />
-      <workItem from="1556463365091" duration="150000" />
-      <workItem from="1556463530165" duration="119000" />
-      <workItem from="1556465045693" duration="594000" />
-      <workItem from="1556496395853" duration="14645000" />
+      <workItem from="1556420246626" duration="438000" />
+      <workItem from="1556420819537" duration="2157000" />
+      <workItem from="1556431556419" duration="2024000" />
     </task>
     <task id="LOCAL-00001" summary="增加基于Keras的简单全连接网络">
       <created>1554130365545</created>
@@ -481,7 +462,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="364792000" />
+    <option name="totallyTimeSpent" value="348916000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -493,10 +474,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="-4" width="1869" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="35" y="25" width="1331" height="743" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49635923" weight="0.30485114" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49635923" visible="true" weight="0.19844358" />
       <window_info id="Structure" order="1" sideWeight="0.50190115" side_tool="true" weight="0.1871948" />
       <window_info id="Favorites" order="2" sideWeight="0.5036408" side_tool="true" weight="0.18956044" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -506,18 +486,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32857144" />
-      <window_info anchor="bottom" id="Python Console" order="7" visible="true" weight="0.2712042" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.36842105" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.22827224" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.23571429" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.23429541" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info active="true" anchor="right" x="0" y="0" width="417" height="884" id="Documentation" order="4" sideWeight="0.5078616" side_tool="true" visible="true" weight="0.2306425" />
-      <window_info anchor="right" id="SciView" order="5" sideWeight="0.49213836" weight="0.15321252" />
+      <window_info anchor="right" x="0" y="0" width="417" height="884" id="Documentation" order="4" sideWeight="0.3924612" side_tool="true" visible="true" weight="0.20155641" />
+      <window_info anchor="right" id="SciView" order="5" sideWeight="0.6075388" visible="true" weight="0.20155641" />
       <window_info anchor="right" id="Database" order="6" />
     </layout>
     <layout-to-restore>
@@ -602,7 +582,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加基于Keras的简单全连接网络" />
     <MESSAGE value="add stock" />
-    <option name="LAST_COMMIT_MESSAGE" value="add stock" />
+    <MESSAGE value="comment db.fectch(&quot;&quot;) in my_sql_stockdb.py; change train_X, test_X -&gt; train_x, text_x" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment db.fectch(&quot;&quot;) in my_sql_stockdb.py; change train_X, test_X -&gt; train_x, text_x" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -731,23 +712,23 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/dych_tf_study$LSTM_pullution.coverage" NAME="LSTM_pullution Coverage Results" MODIFIED="1555978265855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$YaleFace.coverage" NAME="YaleFace Coverage Results" MODIFIED="1555377235719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$spyderdata.coverage" NAME="spyderdata Coverage Results" MODIFIED="1555379398170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$HOG_SVM.coverage" NAME="HOG_SVM分类器 Coverage Results" MODIFIED="1555057582594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cv" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$ConvolutionalNeuralNetwork_MNIST.coverage" NAME="ConvolutionalNeuralNetwork_MNIST Coverage Results" MODIFIED="1555547581115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$ConvolutionNeuralNetwork_CIFAR10.coverage" NAME="ConvolutionNeuralNetwork_CIFAR10 Coverage Results" MODIFIED="1554303753978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$FullyConnectedNetwork.coverage" NAME="FullyConnectedNetwork Coverage Results" MODIFIED="1554185357050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$mysqldb.coverage" NAME="mysqldb Coverage Results" MODIFIED="1555461301621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$drawacc.coverage" NAME="drawacc Coverage Results" MODIFIED="1554195701541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$spyderstock.coverage" NAME="spyderstock Coverage Results" MODIFIED="1555547635443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$LSTM_pullution_multi.coverage" NAME="LSTM_pullution_multi Coverage Results" MODIFIED="1556074797356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$storage.coverage" NAME="storage Coverage Results" MODIFIED="1556250680845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$LSTM_MNIST.coverage" NAME="LSTM_MNIST Coverage Results" MODIFIED="1554356028482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$ObjectRecognitionVGG16.coverage" NAME="ObjectRecognitionVGG16 Coverage Results" MODIFIED="1554359921735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$lstm_stock.coverage" NAME="lstm_stock Coverage Results" MODIFIED="1556257625891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
     <SUITE FILE_PATH="coverage/dych_tf_study$.coverage" NAME="视频分解图片 Coverage Results" MODIFIED="1554966393184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cv" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$spyderdata.coverage" NAME="spyderdata Coverage Results" MODIFIED="1555379398170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$lstm_stock.coverage" NAME="lstm_stock Coverage Results" MODIFIED="1556257625891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$FullyConnectedNetwork.coverage" NAME="FullyConnectedNetwork Coverage Results" MODIFIED="1554185357050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$drawacc.coverage" NAME="drawacc Coverage Results" MODIFIED="1554195701541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$ObjectRecognitionVGG16.coverage" NAME="ObjectRecognitionVGG16 Coverage Results" MODIFIED="1554359921735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$ConvolutionNeuralNetwork_CIFAR10.coverage" NAME="ConvolutionNeuralNetwork_CIFAR10 Coverage Results" MODIFIED="1554303753978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$LSTM_MNIST.coverage" NAME="LSTM_MNIST Coverage Results" MODIFIED="1554356028482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$storage.coverage" NAME="storage Coverage Results" MODIFIED="1556250680845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$ConvolutionalNeuralNetwork_MNIST.coverage" NAME="ConvolutionalNeuralNetwork_MNIST Coverage Results" MODIFIED="1555547581115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$LSTM_pullution_multi.coverage" NAME="LSTM_pullution_multi Coverage Results" MODIFIED="1556074797356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
     <SUITE FILE_PATH="coverage/dych_tf_study$mysql_stockdb.coverage" NAME="mysql_stockdb Coverage Results" MODIFIED="1556157437521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$spyderstock.coverage" NAME="spyderstock Coverage Results" MODIFIED="1555547635443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$mysqldb.coverage" NAME="mysqldb Coverage Results" MODIFIED="1555461301621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$YaleFace.coverage" NAME="YaleFace Coverage Results" MODIFIED="1555377235719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$LSTM_pullution.coverage" NAME="LSTM_pullution Coverage Results" MODIFIED="1555978265855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$HOG_SVM.coverage" NAME="HOG_SVM分类器 Coverage Results" MODIFIED="1555057582594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cv" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -784,20 +765,24 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/livelossplot/keras.py">
+    <entry file="file://$PROJECT_DIR$/LearningTensorflow/ch2/ch2_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="361">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/random.py">
+    <entry file="file://$PROJECT_DIR$/LearningTensorflow/ch2/ch2_4_linear_regression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14117">
-          <caret line="751" selection-start-line="751" selection-end-line="751" />
+        <state relative-caret-position="304">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/stock/spyderdata.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/pymysql/err.py" />
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/livelossplot/keras.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/random.py" />
     <entry file="file://$PROJECT_DIR$/cv/油画效果.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
@@ -831,20 +816,8 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras/applications/vgg16.py" />
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras_applications/vgg16.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="36" selection-start-column="25" selection-end-line="29" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras_applications/resnet50.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="817">
-          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras_applications/vgg16.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras_applications/resnet50.py" />
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/pandas/core/frame.py" />
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/sklearn/preprocessing/label.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_umd.py">
@@ -855,6 +828,17 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/pandas/io/date_converters.py" />
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_MNIST.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#1807#2173#0" />
+            <element signature="e#2502#3111#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras/engine/network.py" />
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/tensorflow/python/keras/engine/training.py" />
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/tensorflow/python/keras/layers/convolutional.py" />
@@ -909,23 +893,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras/__init__.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1078298093/math.py">
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/drawacc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="370" column="4" selection-start-line="370" selection-start-column="4" selection-end-line="370" selection-end-column="4" />
+        <state relative-caret-position="559">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras/__init__.py" />
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1078298093/math.py" />
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/multi_slstm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="543">
+          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras/engine/sequential.py" />
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/pandas/io/parsers.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1078298093/numpy/core/multiarray.py">
+    <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_pullution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1723">
-          <caret line="115" column="4" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
+        <state relative-caret-position="463">
+          <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+          <folding>
+            <element signature="e#106#127#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1078298093/numpy/core/multiarray.py" />
     <entry file="file://$PROJECT_DIR$/stock/liveplot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -941,19 +943,18 @@
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/keras/layers/recurrent.py" />
     <entry file="file://$PROJECT_DIR$/dnn/KerasNet/LSTM_pullution_multi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4256">
+        <state relative-caret-position="3360">
           <caret line="243" column="59" selection-start-line="243" selection-start-column="59" selection-end-line="243" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stock/spyderstock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+        <state relative-caret-position="405">
+          <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
           <folding>
             <element signature="e#59#74#0" expanded="true" />
             <element signature="e#215#1870#0" />
-            <element signature="e#2065#2448#0" />
           </folding>
         </state>
       </provider>
@@ -961,8 +962,8 @@
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow-gpu/lib/python3.6/site-packages/tensorflow/python/ops/variables.py" />
     <entry file="file://$PROJECT_DIR$/stock/mysql_stockdb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4560">
-          <caret line="243" column="10" selection-start-line="236" selection-start-column="4" selection-end-line="243" selection-end-column="10" />
+        <state relative-caret-position="3600">
+          <caret line="243" column="4" selection-start-line="243" selection-start-column="4" selection-end-line="243" selection-end-column="4" />
           <folding>
             <element signature="e#1422#1436#0" expanded="true" />
           </folding>
@@ -972,7 +973,7 @@
     <entry file="file://$PROJECT_DIR$/stock/ReadMe.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="95">
+          <first_editor relative-caret-position="75">
             <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
           </first_editor>
           <second_editor />
@@ -1012,7 +1013,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="133">
+          <first_editor relative-caret-position="105">
             <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
           </first_editor>
           <second_editor />
@@ -1021,8 +1022,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stock/storage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="69" />
+        <state relative-caret-position="165">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1060,11 +1061,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stock/lstm_stock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-          <folding>
-            <element signature="e#98#119#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="328">
+          <caret line="296" column="35" lean-forward="true" selection-start-line="296" selection-start-column="35" selection-end-line="296" selection-end-column="35" />
         </state>
       </provider>
     </entry>
