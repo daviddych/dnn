@@ -1,0 +1,14 @@
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/比策知.jpg 52,39,72,57,0 90,65,118,85,0 104,16,133,34,0 145,37,165,55,0 189,38,213,61,0 230,40,257,65,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/阿浅蓬.jpg 3,21,27,47,0 70,29,104,52,0 93,64,125,81,0 134,35,165,64,0 170,60,202,79,0 216,57,252,83,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/暗曲板.jpg 8,61,47,85,0 75,28,113,49,0 148,65,178,85,0 181,21,219,46,0 224,34,254,58,0 213,66,239,85,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/本璃战.jpg 8,19,33,44,0 8,64,35,85,0 49,10,76,33,0 127,52,156,78,0 217,46,239,64,0 245,12,269,31,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/本贝听.jpg 15,12,43,38,0 70,57,94,79,0 88,29,112,52,0 147,51,176,71,0 202,42,236,70,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/挨吓楚.jpg 35,47,72,71,0 115,40,151,69,0 79,60,110,84,0 145,10,177,39,0 201,17,238,40,0 229,57,266,81,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/北亲娃.jpg 11,61,40,84,0 53,10,85,39,0 97,12,135,40,0 143,26,175,53,0 180,53,208,81,0 225,38,260,66,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/暗解阅.jpg 4,40,38,67,0 83,11,117,30,0 95,64,126,83,0 110,31,145,56,0 162,16,199,34,0 149,58,181,81,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/本王假.jpg 40,53,66,74,0 67,23,95,47,0 113,62,142,85,0 161,55,180,74,0 195,17,229,39,0 229,47,254,69,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/办释偶.jpg 24,23,57,46,0 93,46,119,67,0 101,19,125,39,0 171,17,197,37,0 219,20,251,49,0 190,49,220,75,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/白凑俩.jpg 11,30,43,48,0 61,52,95,75,0 76,24,112,51,0 139,14,171,37,0 158,47,192,71,0 238,19,263,42,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/暗啊驻.jpg 24,47,62,73,0 99,58,134,84,0 98,28,122,52,0 149,31,185,55,0 207,29,240,57,0 215,62,240,85,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/北实辑.jpg 10,39,44,62,0 36,8,71,37,0 75,51,103,76,0 75,17,110,39,0 145,28,170,44,0 188,58,217,83,0
+/home/daiyucheng/workspace/dych_tf_study/projs/keras-yolo3-master-master/VOCdevkit/VOC2007/JPEGImages/办湘文.jpg 45,46,75,75,0 97,15,134,39,0 140,34,176,58,0 227,8,261,37,0 163,56,197,81,0
