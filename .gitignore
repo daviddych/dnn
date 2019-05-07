@@ -30,3 +30,5 @@ projs/keras-yolo3-master-master/yolo3 \+ python 找出图像中的汉字 - 两�
 projs/rebars/data/test_dataset/
 
 projs/rebars/data/train_dataset/
+
+projs/rebars/data/train_Annotations/
