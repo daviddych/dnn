@@ -62,7 +62,7 @@ def mkdir(path):
     if not os.path.exists(path):
         os.makedirs(path)
 
-def writeInfor2Xml(filename, folder, path, rects, object_name='chinese', xmlfolder=r'data/train_Annotations/'):
+def writeInfor2Xml(filename, folder, path, rects, object_name, xmlfolder):
     img = cv2.imread(path, cv2.IMREAD_COLOR)
 
     # 创建dom文档
@@ -119,20 +119,22 @@ def writeInfor2Xml(filename, folder, path, rects, object_name='chinese', xmlfold
 
 
 def writexml(img_folder, img_rects, xmlfolder):
-    for filename in img_rects:
-        path = os.path.join(img_folder, filename)
+    for imgname in img_rects:
+        path = os.path.join(img_folder, imgname)
         folder = img_folder.split('/')
         if len(folder[-1]) == 0:
             folder = folder[-2]
         else:
             folder = folder[-1]
 
-        writeInfor2Xml(filename, folder, path, img_rects[filename], xmlfolder)
+        writeInfor2Xml(imgname, folder, path, img_rects[imgname], object_name='rebars', xmlfolder=xmlfolder)
 
 # 从csv文件中读取数据,转存为xml格式, 方便后面Yolo3训练网络对数据格式的要求
-def covert_csv_to_xml(csvfile=r'data/train_labels.csv', img_folder=r'data/train_dataset', xmlfolder=r'data/train_Annotations/'):
+def covert_csv_to_xml(csvfile, img_folder, xmlfolder):
     img_rects = load_train_labels(csvfile)
     writexml(os.path.join(os.getcwd(), img_folder), img_rects, xmlfolder)
+
+    return img_rects
 
 # 测试加载并验证数据读取正确性
 def load_show():
@@ -140,7 +142,8 @@ def load_show():
     draw_rects(img_rects)
 
 def main():
-    covert_csv_to_xml()
+    # 此处给的都是相对路径
+    covert_csv_to_xml(csvfile=r'data/train_labels.csv', img_folder=r'data/train_dataset', xmlfolder=r'data/train_Annotations/')
 
 
 if __name__ == '__main__':

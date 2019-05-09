@@ -1,5 +1,7 @@
 找出二维码中的汉字，使用可参考https://blog.csdn.net/u010429424/article/details/83238988
 
+git clone https://github.com/lijialinneu/keras-yolo3-master.git
+
 
 ```
 Usage
@@ -18,7 +20,7 @@ model_data/yolo_weights.h5
 2.修改keras-yolo3-master\model_data下coco_classes.txt和voc_classes.txt，里面写的是要识别的类型，我写的是chinese。
 
 ```
-创建模型
+重要模型参数:
 
 ```
 input_shape:输入图像尺寸；

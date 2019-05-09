@@ -20,11 +20,11 @@ from keras.utils import multi_gpu_model
 
 class YOLO(object):
     _defaults = {
-        "model_path": 'logs/000/trained_weights.h5',
-        "anchors_path": 'model_data/yolo_anchors.txt',
-        "classes_path": 'model_data/coco_classes.txt',
-        "score" : 0.4,
-        "iou" : 0.45,
+        "model_path": 'logs/trained_weights.h5',
+        "anchors_path": 'model/yolo_anchors.txt',
+        "classes_path": 'model/coco_classes.txt',
+        "score" : 0.05,
+        "iou" : 0.055,
         "model_image_size" : (416, 416),
         "gpu_num" : 1,
     }
@@ -107,8 +107,7 @@ class YOLO(object):
             assert self.model_image_size[1]%32 == 0, 'Multiples of 32 required'
             boxed_image = letterbox_image(image, tuple(reversed(self.model_image_size)))
         else:
-            new_image_size = (image.width - (image.width % 32),
-                              image.height - (image.height % 32))
+            new_image_size = (image.width - (image.width % 32), image.height - (image.height % 32))
             boxed_image = letterbox_image(image, new_image_size)
         image_data = np.array(boxed_image, dtype='float32')
 
@@ -126,8 +125,7 @@ class YOLO(object):
 
         print('Found {} boxes for {}'.format(len(out_boxes), 'img'))
 
-        font = ImageFont.truetype(font='font/FiraMono-Medium.otf',
-                                  size=np.floor(0.1 * image.size[1] + 0.5).astype('int32'))
+        font = ImageFont.truetype(font='font/FiraMono-Medium.otf', size=np.floor(0.005 * image.size[1] + 0.5).astype('int32'))
 
         # font = ImageFont.truetype(font='font/FiraMono-Medium.otf',
         #             size=np.floor(3e-2 * image.size[1] + 0.5).astype('int32'))
@@ -218,8 +216,10 @@ def detect_video(yolo, video_path, output_path=""):
 import glob
 import os
 
-path = os.path.join(os.getcwd(), r'VOCdevkit/VOC2007/JPEGImages/*.jpg')
-outdir = os.path.join(os.getcwd(), r'VOCdevkit/VOC2007/SegmentationClass')
+os.getcwd()
+
+path = os.path.join(os.getcwd(),r'data/test_dataset/*.jpg')
+outdir = os.path.join(os.getcwd(),r'data/detect')
 yolo = YOLO()
 for jpgfile in glob.glob(path):
     img = Image.open(jpgfile)
