@@ -124,7 +124,7 @@ class YOLO(object):
                 K.learning_phase(): 0
             })
 
-        print('Found {} boxes for {}'.format(len(out_boxes), 'img'))
+        print('Found {} boxes for {}'.format(len(out_boxes), image))
 
         font = ImageFont.truetype(font='font/FiraMono-Medium.otf',
                                   size=np.floor(0.1 * image.size[1] + 0.5).astype('int32'))

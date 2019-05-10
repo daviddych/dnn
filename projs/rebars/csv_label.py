@@ -24,9 +24,13 @@ def draw_rects(img_rects):
     win_title = 'image'
     cv2.namedWindow(win_title, cv2.WINDOW_NORMAL)
 
+    rect_num= []
     for key in img_rects:
         filename = os.path.join('data/train_dataset',key)
         img = cv2.imread(filename, cv2.IMREAD_COLOR)
+
+        rect_num.append(len(img_rects[key]))
+        print(rect_num[-1])
         for (l,t,r,b) in img_rects[key]:
             cv2.rectangle(img, (int(l),int(t)), (int(r),int(b)), (255,0,0), 4)
 
@@ -35,6 +39,8 @@ def draw_rects(img_rects):
         if cv2.waitKey(50) == 27:  # & 0xFF == ord('q'):
             break
 
+    rect_num.sort()
+    print(rect_num)
     cv2.destroyAllWindows()
             
 
@@ -54,13 +60,15 @@ def addNode(doc, nodename, parent=None, nodetext=None):
 
 # 创建路径
 def mkdir(path):
-    # 去除首位空格和尾部\符号
+    # 去除首尾空格和尾部\符号
     path = path.strip()
     path = path.rstrip("\\")
 
     # 判断路径是否存在，如果不存在就创建该文件夹
     if not os.path.exists(path):
         os.makedirs(path)
+
+    return path
 
 def writeInfor2Xml(filename, folder, path, rects, object_name, xmlfolder):
     img = cv2.imread(path, cv2.IMREAD_COLOR)
@@ -147,4 +155,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    #main()
+    load_show()

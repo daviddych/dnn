@@ -23,10 +23,11 @@ class YOLO(object):
         "model_path": 'logs/trained_weights.h5',
         "anchors_path": 'model/yolo_anchors.txt',
         "classes_path": 'model/coco_classes.txt',
-        "score" : 0.05,
-        "iou" : 0.055,
+        "score" : 0.4,
+        "iou" : 0.45,
         "model_image_size" : (416, 416),
         "gpu_num" : 1,
+        "max_boxes":300
     }
 
     @classmethod
@@ -95,11 +96,11 @@ class YOLO(object):
         if self.gpu_num>=2:
             self.yolo_model = multi_gpu_model(self.yolo_model, gpus=self.gpu_num)
         boxes, scores, classes = yolo_eval(self.yolo_model.output, self.anchors,
-                len(self.class_names), self.input_image_shape,
+                len(self.class_names), self.input_image_shape,max_boxes=self.max_boxes,
                 score_threshold=self.score, iou_threshold=self.iou)
         return boxes, scores, classes
 
-    def detect_image(self, image):
+    def detect_image(self, image, imgname):
         start = timer()
 
         if self.model_image_size != (None, None):
@@ -123,21 +124,29 @@ class YOLO(object):
                 K.learning_phase(): 0
             })
 
-        print('Found {} boxes for {}'.format(len(out_boxes), 'img'))
+        print('Found {} boxes for {}'.format(len(out_boxes), imgname))
 
-        font = ImageFont.truetype(font='font/FiraMono-Medium.otf', size=np.floor(0.005 * image.size[1] + 0.5).astype('int32'))
+        font = ImageFont.truetype(font='font/FiraMono-Medium.otf', size=np.floor(0.01 * image.size[1] + 0.5).astype('int32'))
 
-        # font = ImageFont.truetype(font='font/FiraMono-Medium.otf',
-        #             size=np.floor(3e-2 * image.size[1] + 0.5).astype('int32'))
-        thickness = (image.size[0] + image.size[1]) // 300
+        thickness = (image.size[0] + image.size[1]) // 1000
+
+        draw = ImageDraw.Draw(image)
+
+        title_font = ImageFont.truetype(font='font/FiraMono-Medium.otf', size=np.floor(0.06 * image.size[1] + 0.5).astype('int32'))
+        box_label = "Fond: {}".format(len(out_boxes))
+        titlelabel_size = draw.textsize(box_label, title_font)
+        pt1 = np.array([10,10])
+        draw.rectangle([tuple(pt1), tuple(pt1 + titlelabel_size)],fill=(0,0,128))
+        draw.text(pt1, box_label, fill=(0,255,0), font=title_font)
 
         for i, c in reversed(list(enumerate(out_classes))):
             predicted_class = self.class_names[c]
             box = out_boxes[i]
             score = out_scores[i]
 
-            label = '{} {:.2f}'.format(predicted_class, score)
-            draw = ImageDraw.Draw(image)
+            #label = '{} {:.2f}'.format(predicted_class, score) # class_name and score
+            label = '{:.2f}'.format(score)
+            #draw = ImageDraw.Draw(image)
             label_size = draw.textsize(label, font)
 
             top, left, bottom, right = box
@@ -145,7 +154,7 @@ class YOLO(object):
             left = max(0, np.floor(left + 0.5).astype('int32'))
             bottom = min(image.size[1], np.floor(bottom + 0.5).astype('int32'))
             right = min(image.size[0], np.floor(right + 0.5).astype('int32'))
-            print(label, (left, top), (right, bottom))
+            #print(label, (left, top), (right, bottom))
 
             if top - label_size[1] >= 0:
                 text_origin = np.array([left, top - label_size[1]])
@@ -153,18 +162,20 @@ class YOLO(object):
                 text_origin = np.array([left, top + 1])
 
             # My kingdom for a good redistributable image drawing library.
-            for i in range(thickness):
-                draw.rectangle(
-                    [left + i, top + i, right - i, bottom - i],
-                    outline=self.colors[c])
+            # for i in range(thickness):
+            #     draw.rectangle(
+            #         [left + i, top + i, right - i, bottom - i],
+            #         outline=self.colors[c], width = thickness)
+            draw.rectangle([left, top, right, bottom], outline=self.colors[c], width = thickness)
             draw.rectangle(
                 [tuple(text_origin), tuple(text_origin + label_size)],
                 fill=self.colors[c])
             draw.text(text_origin, label, fill=(0, 0, 0), font=font)
-            del draw
+
+        del draw
 
         end = timer()
-        print(end - start)
+        #print(end - start) # 
         return image
 
     def close_session(self):
@@ -216,13 +227,23 @@ def detect_video(yolo, video_path, output_path=""):
 import glob
 import os
 
-os.getcwd()
+# 创建路径
+def mkdir(path):
+    # 去除首尾空格和尾部\符号
+    path = path.strip()
+    path = path.rstrip("\\")
+
+    # 判断路径是否存在，如果不存在就创建该文件夹
+    if not os.path.exists(path):
+        os.makedirs(path)
+
+    return path
 
 path = os.path.join(os.getcwd(),r'data/test_dataset/*.jpg')
-outdir = os.path.join(os.getcwd(),r'data/detect')
+outdir = os.path.join(os.getcwd(), mkdir(r'data/detect'))
 yolo = YOLO()
 for jpgfile in glob.glob(path):
     img = Image.open(jpgfile)
-    img = yolo.detect_image(img)
+    img = yolo.detect_image(img, jpgfile.split('/')[-1])
     img.save(os.path.join(outdir, os.path.basename(jpgfile)))
 yolo.close_session()

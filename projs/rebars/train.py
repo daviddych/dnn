@@ -17,7 +17,7 @@ def _main():
     classes_path = 'model/voc_classes.txt'
     anchors_path = 'model/yolo_anchors.txt'
     #weights_path = 'model/yolo_weights.h5' # ='model/yolo_weights.h5'
-    weights_path = 'logs/trained_weights_1.h5'
+    weights_path = 'logs/trained_weights_2.h5'
     class_names = get_classes(classes_path)
     anchors = get_anchors(anchors_path)
     input_shape = (416,416) # multiple of 32, hw
@@ -96,7 +96,7 @@ def create_model(input_shape, anchors, num_classes, load_pretrained=False, freez
     model = Model([model_body.input, *y_true], model_loss)
     return model
 
-def data_generator(annotation_lines, batch_size, input_shape, anchors, num_classes):
+def data_generator(annotation_lines, batch_size, input_shape, anchors, num_classes, max_boxes=300):
     n = len(annotation_lines)
     np.random.shuffle(annotation_lines)
     i = 0
@@ -105,7 +105,7 @@ def data_generator(annotation_lines, batch_size, input_shape, anchors, num_class
         box_data = []
         for b in range(batch_size):
             i %= n
-            image, box = get_random_data(annotation_lines[i], input_shape, random=True)
+            image, box = get_random_data(annotation_lines[i], input_shape, max_boxes=max_boxes, random=True)
             image_data.append(image)
             box_data.append(box)
             i += 1
