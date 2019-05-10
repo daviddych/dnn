@@ -26,6 +26,8 @@
     
     2). 修改model下coco_classes.txt和voc_classes.txt，里面写的是要识别的类型，此处写rebars。
     
+3. 将[智能盘点—钢筋数量AI识别项目](https://www.datafountain.cn/competitions/332)提供的上下载train_dataset和test_data解压后放在data文件夹下，下载的train_labels.csv文件也放在data文件夹下
+    
     
 ```
 用法
