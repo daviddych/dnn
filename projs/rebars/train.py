@@ -9,11 +9,21 @@ from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
 
 from yolo3.model import preprocess_true_boxes, yolo_body, tiny_yolo_body, yolo_loss
 from yolo3.utils import get_random_data
+import os
 
+# 创建路径
+def mkdir(path):
+    # 去除首位空格和尾部\符号
+    path = path.strip()
+    path = path.rstrip("\\")
+
+    # 判断路径是否存在，如果不存在就创建该文件夹
+    if not os.path.exists(path):
+        os.makedirs(path)
 
 def _main():
     annotation_path = 'train.txt'
-    log_dir = 'logs/'
+    log_dir = mkdir('logs/')
     classes_path = 'model/voc_classes.txt'
     anchors_path = 'model/yolo_anchors.txt'
     #weights_path = 'model/yolo_weights.h5' # ='model/yolo_weights.h5'

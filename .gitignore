@@ -50,3 +50,5 @@ projs/rebars/test\.txt
 projs/rebars/val\.txt
 
 projs/rebars/model/yolo_weights.h5
+
+projs/rebars/trainval\.txt

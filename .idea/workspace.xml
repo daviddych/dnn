@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cba3524-14fd-4aad-b7d6-f898e0fcb49a" name="Default" comment="comment db.fectch(&quot;&quot;) in my_sql_stockdb.py; change train_X, test_X -&gt; train_x, text_x">
+      <change beforePath="$PROJECT_DIR$/.idea/dych_tf_study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dych_tf_study.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projs/keras-yolo3-master-master/yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/projs/keras-yolo3-master-master/yolo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projs/keras-yolo3-master-master/yolo3/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/projs/keras-yolo3-master-master/yolo3/utils.py" afterDir="false" />
@@ -226,7 +228,6 @@
         <option value="$PROJECT_DIR$/projs/rebars/yolo_detect.py" />
         <option value="$PROJECT_DIR$/projs/rebars/model/coco_classes.txt" />
         <option value="$PROJECT_DIR$/projs/rebars/model/voc_classes.txt" />
-        <option value="$PROJECT_DIR$/projs/rebars/splitdata.py" />
         <option value="$PROJECT_DIR$/projs/rebars/voc_annotation.py" />
         <option value="$PROJECT_DIR$/projs/rebars/yolo3/csv_voc_annotation.py" />
         <option value="$PROJECT_DIR$/projs/rebars/csv_voc_annotation.py" />
@@ -258,8 +259,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="dych_tf_study" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dych_tf_study" type="462c0819:PsiDirectoryNode" />
+              <item name="dnn_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dnn_study" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dych_tf_study" type="b2602c69:ProjectViewProjectNode" />
@@ -344,6 +345,9 @@
       <module name="dych_tf_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/projs/rebars" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -385,6 +389,9 @@
       <module name="dych_tf_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/projs/rebars" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -426,6 +433,9 @@
       <module name="dych_tf_study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/projs/rebars" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -517,7 +527,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="51" y="-4" width="1869" height="1084" extended-state="6" />
+    <frame x="35" y="25" width="1331" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49635923" visible="true" weight="0.14113125" />
@@ -826,7 +836,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/dych_tf_study$LSTM_pullution.coverage" NAME="LSTM_pullution Coverage Results" MODIFIED="1555978265855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$.coverage" NAME="视频分解图片 Coverage Results" MODIFIED="1554966393184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cv" />
     <SUITE FILE_PATH="coverage/dych_tf_study$spyderdata.coverage" NAME="spyderdata Coverage Results" MODIFIED="1555379398170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
     <SUITE FILE_PATH="coverage/dych_tf_study$YaleFace.coverage" NAME="YaleFace Coverage Results" MODIFIED="1555377235719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn" />
     <SUITE FILE_PATH="coverage/dych_tf_study$ConvolutionalNeuralNetwork_MNIST.coverage" NAME="ConvolutionalNeuralNetwork_MNIST Coverage Results" MODIFIED="1555547581115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
@@ -835,8 +845,6 @@
     <SUITE FILE_PATH="coverage/dych_tf_study$train__1_.coverage" NAME="train (1) Coverage Results" MODIFIED="1557452398566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projs/keras-yolo3-master-master" />
     <SUITE FILE_PATH="coverage/dych_tf_study$ConvolutionNeuralNetwork_CIFAR10.coverage" NAME="ConvolutionNeuralNetwork_CIFAR10 Coverage Results" MODIFIED="1554303753978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
     <SUITE FILE_PATH="coverage/dych_tf_study$FullyConnectedNetwork.coverage" NAME="FullyConnectedNetwork Coverage Results" MODIFIED="1554185357050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$mysqldb.coverage" NAME="mysqldb Coverage Results" MODIFIED="1555461301621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$yolo.coverage" NAME="yolo Coverage Results" MODIFIED="1557212980931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projs/keras-yolo3-master-master" />
     <SUITE FILE_PATH="coverage/dych_tf_study$drawacc.coverage" NAME="drawacc Coverage Results" MODIFIED="1554195701541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
     <SUITE FILE_PATH="coverage/dych_tf_study$detect.coverage" NAME="detect Coverage Results" MODIFIED="1557471516493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projs/rebars" />
     <SUITE FILE_PATH="coverage/dych_tf_study$spyderstock.coverage" NAME="spyderstock Coverage Results" MODIFIED="1555547635443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
@@ -844,12 +852,19 @@
     <SUITE FILE_PATH="coverage/dych_tf_study$LSTM_pullution_multi.coverage" NAME="LSTM_pullution_multi Coverage Results" MODIFIED="1556074797356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
     <SUITE FILE_PATH="coverage/dych_tf_study$storage.coverage" NAME="storage Coverage Results" MODIFIED="1556250680845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
     <SUITE FILE_PATH="coverage/dych_tf_study$ObjectRecognitionVGG16.coverage" NAME="ObjectRecognitionVGG16 Coverage Results" MODIFIED="1554359921735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$ConvolutionNeuralNetwork_CIFAR10.coverage" NAME="ConvolutionNeuralNetwork_CIFAR10 Coverage Results" MODIFIED="1554303753978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
     <SUITE FILE_PATH="coverage/dych_tf_study$LSTM_MNIST.coverage" NAME="LSTM_MNIST Coverage Results" MODIFIED="1554356028482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$main.coverage" NAME="main Coverage Results" MODIFIED="1557213368903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projs/rebars" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$lstm_stock.coverage" NAME="lstm_stock Coverage Results" MODIFIED="1556257625891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$.coverage" NAME="视频分解图片 Coverage Results" MODIFIED="1554966393184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cv" />
-    <SUITE FILE_PATH="coverage/dych_tf_study$voc_annotation.coverage" NAME="voc_annotation Coverage Results" MODIFIED="1557281239476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projs/rebars" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$storage.coverage" NAME="storage Coverage Results" MODIFIED="1556250680845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$ConvolutionalNeuralNetwork_MNIST.coverage" NAME="ConvolutionalNeuralNetwork_MNIST Coverage Results" MODIFIED="1555547581115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$LSTM_pullution_multi.coverage" NAME="LSTM_pullution_multi Coverage Results" MODIFIED="1556074797356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
     <SUITE FILE_PATH="coverage/dych_tf_study$mysql_stockdb.coverage" NAME="mysql_stockdb Coverage Results" MODIFIED="1556157437521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$yolo.coverage" NAME="yolo Coverage Results" MODIFIED="1557212980931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projs/keras-yolo3-master-master" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$spyderstock.coverage" NAME="spyderstock Coverage Results" MODIFIED="1555547635443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$mysqldb.coverage" NAME="mysqldb Coverage Results" MODIFIED="1555461301621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$YaleFace.coverage" NAME="YaleFace Coverage Results" MODIFIED="1555377235719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$voc_annotation.coverage" NAME="voc_annotation Coverage Results" MODIFIED="1557281239476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/projs/rebars" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$LSTM_pullution.coverage" NAME="LSTM_pullution Coverage Results" MODIFIED="1555978265855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dnn/KerasNet" />
+    <SUITE FILE_PATH="coverage/dych_tf_study$HOG_SVM.coverage" NAME="HOG_SVM分类器 Coverage Results" MODIFIED="1555057582594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cv" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">

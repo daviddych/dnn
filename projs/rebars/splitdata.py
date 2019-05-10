@@ -1,10 +1,21 @@
 import os
 import random
 
+# 创建路径
+def mkdir(path):
+    # 去除首位空格和尾部\符号
+    path = path.strip()
+    path = path.rstrip("\\")
+
+    # 判断路径是否存在，如果不存在就创建该文件夹
+    if not os.path.exists(path):
+        os.makedirs(path)
+
 trainval_percent = 0.1
 train_percent = 0.9
 xmlfilepath = 'data/train_Annotations'
 txtsavepath = 'data/splitset'
+mkdir(txtsavepath)
 total_xml = os.listdir(xmlfilepath)
 
 num = len(total_xml)

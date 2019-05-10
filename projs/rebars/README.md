@@ -24,7 +24,7 @@
     
         具体地, 在每一处yolo之前的那个convolutional层都要修改filters的数目,filters=anchors_num*(classes_num + 5),anchors_num为3（一般不变）, classes_num为3（根据这个修改就行）,修改yolo中classes的数目。注意是每个yolo和yolo前的convolutional层都做相同的修改, random为多尺度训练,1为打开多尺度训练，0为相反。
     
-    2). 修改model_data下coco_classes.txt和voc_classes.txt，里面写的是要识别的类型，此处写rebars。
+    2). 修改model下coco_classes.txt和voc_classes.txt，里面写的是要识别的类型，此处写rebars。
     
     
 ```
@@ -38,7 +38,7 @@
 2. python csv_voc_annotation.py  # 将官网提供的训练标签数据data/train_labels.csv, 转换为符合Labelimg软件可查看的xml格式, 存储在data.train_Annotations位置
                                  # 同时在当前文件夹下生成tain.txt文件,
                                    
-3. python train.py          # 训练模型,结果保存为logs/trained_weights.h5
+3. python train.py          # 训练模型,结果保存为logs/trained_weights.h5,  要求GPU硬件支持
 4. python detect.py         # 利用训练的结果对data/test_dataset中的图片进行检测, 结果保存在data/detect下
 
 ```
