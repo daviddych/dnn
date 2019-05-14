@@ -1,3 +1,9 @@
+# encoding: utf-8
+#!/usr/bin/env python
+
+# 自定义训练过程回调函数, 控制在训练过程中绘图
+
+
 import keras
 from keras.datasets import mnist
 from keras.models import Sequential
@@ -5,7 +11,6 @@ from keras.layers.core import Dense, Dropout, Activation
 from keras.optimizers import SGD, Adam, RMSprop
 from keras.utils import np_utils
 import matplotlib.pyplot as plt
-from livelossplot.keras import PlotLossesCallback  # pip install livelossplot
 
 
 class History(keras.callbacks.Callback):
@@ -72,7 +77,7 @@ class History(keras.callbacks.Callback):
 
 batch_size = 128
 nb_classes = 10
-nb_epoch = 10
+epochs = 10
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 X_train = X_train.reshape(60000, 784)
 X_test = X_test.reshape(10000, 784)
@@ -106,7 +111,7 @@ model.compile(loss='categorical_crossentropy',
 # 创建一个实例LossHistory
 history = History()
 model.fit(X_train, Y_train,
-          batch_size=batch_size, nb_epoch=nb_epoch,
+          batch_size=batch_size, epochs=epochs,
           verbose=0,
           validation_data=(X_test, Y_test),
           callbacks=[history])   # 回调函数将数据传给history, 此处必须是数组

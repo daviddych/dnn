@@ -21,9 +21,11 @@ def mkdir(path):
     if not os.path.exists(path):
         os.makedirs(path)
 
+    return path
+
 def _main():
     annotation_path = 'train.txt'
-    log_dir = mkdir('logs/')
+    log_dir = mkdir('logs')
     classes_path = 'model/voc_classes.txt'
     anchors_path = 'model/yolo_anchors.txt'
     #weights_path = 'model/yolo_weights.h5' # ='model/yolo_weights.h5'
@@ -39,7 +41,7 @@ def _main():
 
     train(model, annotation_path, input_shape, anchors, len(class_names), log_dir=log_dir)
 
-def train(model, annotation_path, input_shape, anchors, num_classes, log_dir='logs/'):
+def train(model, annotation_path, input_shape, anchors, num_classes, log_dir=r'logs'):
     model.compile(optimizer='adam', loss={
         'yolo_loss': lambda y_true, y_pred: y_pred})
     logging = TensorBoard(log_dir=log_dir)

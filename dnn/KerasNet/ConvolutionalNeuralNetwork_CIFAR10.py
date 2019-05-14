@@ -6,8 +6,10 @@
 # 数据集： CIFAR10
 
 import numpy as np
-import tensorflow.keras as keras
-import tensorflow.keras.datasets.cifar10 as cifar10
+import keras
+# import tensorflow.keras as keras
+# import tensorflow.keras.datasets.cifar10 as cifar10
+import keras.datasets.cifar10 as cifar10
 from   livelossplot.keras import PlotLossesCallback  # pip install livelossplot
 import os
 

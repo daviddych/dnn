@@ -5,7 +5,6 @@
 #
 # 数据集： synset_words.txt and cat.jpg
 
-import tensorflow.keras as keras
 from keras.applications.vgg16 import VGG16
 from keras.preprocessing import image
 from keras.applications.vgg16 import preprocess_input,decode_predictions

@@ -6,9 +6,10 @@
 # 数据集： MNIST
 
 import numpy as np
-import tensorflow.keras as keras
+import keras
+#import tensorflow.keras as keras
 import tensorflow.keras.datasets.mnist as mnist
-from   livelossplot.keras import PlotLossesCallback  # pip install livelossplot
+from   livelossplot.keras import PlotLossesCallback  # pip install livelossplot==0.4
 import time
 import os
 
