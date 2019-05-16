@@ -33,11 +33,11 @@
 用法
 -------
 1. cd rebars
-    #2. python csv_label.py      # 将官网提供的训练标签数据data/train_labels.csv, 转换为符合Labelimg软件可查看的xml格式, 存储在data.train_Annotations位置
+    #2. python csv_label.py      # 将官网提供的训练标签数据data/train_labels.csv, 转换为符合Labelimg软件可查看的xml格式, 存储在data/train_Annotations位置
     #3. python splitdata.py      # 数据切分, 在data/splitset文件夹下生成4个txt文件
     #4. python voc_annotation.py # 在当前目录下生成train.txt, trainval.txt, val.txt和test.txt
     
-2. python csv_voc_annotation.py  # 将官网提供的训练标签数据data/train_labels.csv, 转换为符合Labelimg软件可查看的xml格式, 存储在data.train_Annotations位置
+2. python csv_voc_annotation.py  # 将官网提供的训练标签数据data/train_labels.csv, 转换为符合Labelimg软件可查看的xml格式, 存储在data/train_Annotations位置
                                  # 同时在当前文件夹下生成tain.txt文件,
                                    
 3. python train.py          # 训练模型,结果保存为logs/trained_weights.h5,  要求GPU硬件支持

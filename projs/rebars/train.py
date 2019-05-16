@@ -1,6 +1,12 @@
 """
 Retrain the YOLO model for your own dataset.
+
+Visualization training process
+1. cd rebars
+2. Press "Ctrl+Alt+T" and type "tensorboard --logdir logs" in terminal.
+3. copy the link from terminal, and paste it into chrome, eg: http://dyc:6006
 """
+
 import numpy as np
 import keras.backend as K
 from keras.layers import Input, Lambda
@@ -10,6 +16,7 @@ from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
 from yolo3.model import preprocess_true_boxes, yolo_body, tiny_yolo_body, yolo_loss
 from yolo3.utils import get_random_data
 import os
+import re
 
 # 创建路径
 def mkdir(path):
@@ -23,28 +30,35 @@ def mkdir(path):
 
     return path
 
+def remove_files(log_dir, log_ext='dyc'):
+    ''' 删除指定文件夹下,特定后缀的文件 '''
+    if os.path.exists(log_dir):
+        for f in os.listdir(log_dir):
+            if re.match(r'.*\.({})'.format(log_ext), f, flags=re.I):
+                os.remove(os.path.join(log_dir, f))
+
 def _main():
     annotation_path = 'train.txt'
     log_dir = mkdir('logs')
     classes_path = 'model/voc_classes.txt'
     anchors_path = 'model/yolo_anchors.txt'
-    #weights_path = 'model/yolo_weights.h5' # ='model/yolo_weights.h5'
-    weights_path = 'logs/trained_weights_2.h5'
+    #pre_weights_path = 'model/yolo_weights.h5'
+    pre_weights_path = 'logs/trained_weights_2.h5'
+    save_weights_path = 'trained_weights.h5'
     class_names = get_classes(classes_path)
     anchors = get_anchors(anchors_path)
     input_shape = (416,416) # multiple of 32, hw
-    #input_shape = (832, 832)
-    #input_shape = (1664, 1664)  # multiple of 32, hw
+    remove_files('logs', 'dyc')
 
     # 加载yolo_weights.h5文件
-    model = create_model(input_shape, anchors, len(class_names), load_pretrained=True, weights_path = weights_path)
+    model = create_model(input_shape, anchors, len(class_names), load_pretrained=True, weights_path = pre_weights_path)
 
-    train(model, annotation_path, input_shape, anchors, len(class_names), log_dir=log_dir)
+    train(model, annotation_path, input_shape, anchors, len(class_names), log_dir=log_dir, save_weights_path=save_weights_path)
 
-def train(model, annotation_path, input_shape, anchors, num_classes, log_dir=r'logs'):
+def train(model, annotation_path, input_shape, anchors, num_classes, log_dir=r'logs', save_weights_path='trained_weights.h5'):
     model.compile(optimizer='adam', loss={
         'yolo_loss': lambda y_true, y_pred: y_pred})
-    logging = TensorBoard(log_dir=log_dir)
+    logging = TensorBoard(log_dir=log_dir, write_graph=True, write_images=True)
     checkpoint = ModelCheckpoint(log_dir + "ep{epoch:03d}-loss{loss:.3f}-val_loss{val_loss:.3f}.h5",
         monitor='val_loss', save_weights_only=True, save_best_only=True, period=1)
     batch_size = 8
@@ -62,13 +76,14 @@ def train(model, annotation_path, input_shape, anchors, num_classes, log_dir=r'l
         model.fit_generator(data_generator_wrap(lines[:num_train], batch_size, input_shape, anchors, num_classes),
             steps_per_epoch = max(1, num_train // batch_size),
             validation_data = data_generator_wrap(lines[num_train:], batch_size, input_shape, anchors, num_classes),
-            validation_steps = max(1, num_val // batch_size), epochs = 200, initial_epoch = 0)
+            validation_steps = max(1, num_val // batch_size), epochs = 200, initial_epoch = 0, verbose=1,
+                            callbacks=[logging])
     except :
         print("error")
     finally:
-        model.save_weights(log_dir + 'trained_weights_except.h5')
+        model.save_weights(os.path.join(log_dir, save_weights_path[:-3] + '_except.h5')) # 'trained_weights_except.h5'
 
-    model.save_weights(log_dir + 'trained_weights.h5')
+    model.save_weights(os.path.join(log_dir, save_weights_path))
 
 # 从配置文件中解析类标签名
 def get_classes(classes_path):
