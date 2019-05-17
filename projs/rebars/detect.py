@@ -100,7 +100,7 @@ class YOLO(object):
                 score_threshold=self.score, iou_threshold=self.iou)
         return boxes, scores, classes
 
-    def detect_image(self, image, imgname):
+    def detect_image(self, image, imgname=''):
         start = timer()
 
         if self.model_image_size != (None, None):
@@ -175,7 +175,7 @@ class YOLO(object):
         del draw
 
         end = timer()
-        #print(end - start) # 
+        print(end - start) # 
         return image
 
     def close_session(self):
@@ -199,8 +199,12 @@ def detect_video(yolo, video_path, output_path=""):
     curr_fps = 0
     fps = "FPS: ??"
     prev_time = timer()
+    cv2.namedWindow("result", cv2.WINDOW_NORMAL)
     while True:
         return_value, frame = vid.read()
+        if return_value == False:
+            break
+
         image = Image.fromarray(frame)
         image = yolo.detect_image(image)
         result = np.asarray(image)
@@ -215,12 +219,14 @@ def detect_video(yolo, video_path, output_path=""):
             curr_fps = 0
         cv2.putText(result, text=fps, org=(3, 15), fontFace=cv2.FONT_HERSHEY_SIMPLEX,
                     fontScale=0.50, color=(255, 0, 0), thickness=2)
-        cv2.namedWindow("result", cv2.WINDOW_NORMAL)
+
         cv2.imshow("result", result)
         if isOutput:
             out.write(result)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
+
+    cv2.destroyAllWindows()
     yolo.close_session()
 
 

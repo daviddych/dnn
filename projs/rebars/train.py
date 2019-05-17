@@ -59,8 +59,9 @@ def train(model, annotation_path, input_shape, anchors, num_classes, log_dir=r'l
     model.compile(optimizer='adam', loss={
         'yolo_loss': lambda y_true, y_pred: y_pred})
     logging = TensorBoard(log_dir=log_dir, write_graph=True, write_images=True)
-    checkpoint = ModelCheckpoint(log_dir + "ep{epoch:03d}-loss{loss:.3f}-val_loss{val_loss:.3f}.h5",
-        monitor='val_loss', save_weights_only=True, save_best_only=True, period=1)
+    filepath = os.path.join(log_dir, 'trained_weights-ep{epoch:03d}-loss{loss:.3f}-val_loss{val_loss:.3f}.h5')
+    checkpoint = ModelCheckpoint(filepath, monitor='val_loss', verbose=1, save_weights_only=True, save_best_only=True, period=1)
+    earlystop = EarlyStopping(monitor='val_loss', patience=5, verbose=1)
     batch_size = 8
     val_split = 0.1
     with open(annotation_path, encoding='UTF-8') as f:
@@ -77,7 +78,7 @@ def train(model, annotation_path, input_shape, anchors, num_classes, log_dir=r'l
             steps_per_epoch = max(1, num_train // batch_size),
             validation_data = data_generator_wrap(lines[num_train:], batch_size, input_shape, anchors, num_classes),
             validation_steps = max(1, num_val // batch_size), epochs = 200, initial_epoch = 0, verbose=1,
-                            callbacks=[logging])
+                            callbacks=[logging, checkpoint, earlystop])
     except :
         print("error")
     finally:

@@ -35,7 +35,7 @@ def draw_rects(img_rects):
             cv2.rectangle(img, (int(l),int(t)), (int(r),int(b)), (255,0,0), 4)
 
         cv2.imshow('image', img)
-        cv2.resizeWindow('image', 1280, 960)
+        cv2.resizeWindow('ilmage', 1280, 960)
         if cv2.waitKey(50) == 27:  # & 0xFF == ord('q'):
             break
 

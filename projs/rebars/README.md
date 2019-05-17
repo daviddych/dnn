@@ -40,7 +40,7 @@
 2. python csv_voc_annotation.py  # 将官网提供的训练标签数据data/train_labels.csv, 转换为符合Labelimg软件可查看的xml格式, 存储在data/train_Annotations位置
                                  # 同时在当前文件夹下生成tain.txt文件,
                                    
-3. python train.py          # 训练模型,结果保存为logs/trained_weights.h5,  要求GPU硬件支持
+3. python train.py          # 训练模型,结果保存为logs/trained_weights.h5和类型这样的文件trained_weights-ep001-loss2.114-val_loss2.650.h5,  要求GPU硬件支持
 4. python detect.py         # 利用训练的结果对data/test_dataset中的图片进行检测, 结果保存在data/detect下
 
 ```
